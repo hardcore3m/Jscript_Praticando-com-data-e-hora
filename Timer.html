@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <title>Contagem regressiva</title>
+    <script>
+        var contador;
+        var contagem;
+        var timer;
+        function iniciar() {
+            contador = 10;
+            contagem = document.getElementById('contagem');
+            timer = setInterval('countDown()', 1000);
+        }
+        function countDown() {
+            if (contador === 0) {
+                contagem.innerHTML = 'Tempo encerrado';
+                clearTimeout(timer);
+            }
+            else {
+                contagem.innerHTML = contador;
+                contador--;
+            }
+        }
+    </script>
+</head>
+
+<body onload="iniciar()">
+    <h1>Contagem Regressiva</h1>
+    <h2 id="contagem">Iniciando Contagem</h2>
+
+</body>
+
+</html>
