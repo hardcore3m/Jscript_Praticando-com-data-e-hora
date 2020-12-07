@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <title>Data em tempo real</title>
+    <script type="text/javascript">
+        function time() {
+            today = new Date();
+            h = today.getHours();
+            m = today.getMinutes();
+            s = today.getSeconds();
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            setTimeout('time()', 500);
+        }
+    </script>
+</head>
+
+<body onload="time()">
+    <h1>Data e hora em tempo real</h1>
+    <div id="txt"></div>
+
+
+</body>
+
+</html>
