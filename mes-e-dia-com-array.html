@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <title>Trabalhando mês e dia da semana com arrays</title>
+    <script language=javascript type="text/javascript">
+        diaExt = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+        mesExt = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+        now = new Date
+    </script>
+</head>
+
+<body>
+    <script language=javascript type="text/javascript">
+        document.write("<h1> Hoje é " + diaExt[now.getDay()] + ", " + now.getDate() + " de " + mesExt[now.getMonth()] + " de " + now.getFullYear() + ". </h1>")
+        //Verificar por quê a variável mesExt está retornando "Undefined"
+    </script>
+</body>
+
+</html>

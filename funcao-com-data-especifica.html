@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // Obtém a data/hora atual e específica
+        var data = new Date();
+        var data_esp = new Date('03/08/1962 12:30');
+
+        //função para mostrar o resultado
+        function resultado() {
+            document.getElementById("demo").innerHTML = data;
+            document.getElementById("demo1").innerHTML = data_esp;
+        }
+    </script>
+    <h1>Função com data atual e data específica</h1>
+
+    <button onclick="resultado()"> Clique para ver as datas</button>
+    <br><br>
+    <div id="demo"></div>
+    <br><br>
+    <div id="demo1"></div>
+</body>
+
+</html>
