@@ -1,0 +1,11 @@
+h1
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16pt;
+    margin-bottom: 30px;
+    text-align: center;
+}
+body
+{
+    background-color: darkgray;
+}
